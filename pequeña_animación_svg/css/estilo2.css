@@ -1,0 +1,125 @@
+body{
+
+    background-image: url(../imagenes/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.img1{
+
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(0px 30px 50px rgb(255, 0, 123));
+    animation: main 5s infinite alternate;
+
+}
+
+.img2{
+
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0px 30px 50px rgb(255, 0, 123));
+    animation: second 5s infinite alternate;
+    position: relative;
+    left: 500px;
+
+}
+
+
+div{
+    width: 500px;
+    text-align: center;
+    display: flex;
+    padding: 30px;
+}
+
+@keyframes main{
+    
+    0%{
+
+        filter: drop-shadow(0px 20px 40px rgb(255, 0, 123)); 
+        transform: translate(0px,0px);
+
+    }
+
+    25%{
+
+        filter: drop-shadow(5px 30px 50px rgb(255, 0, 0)); 
+        transform: translate(250px,5px);
+
+
+
+    }
+
+    50%{
+
+        filter: drop-shadow(10px 40px 60px rgb(255, 230, 0)); 
+        transform: translate(500px,10px);
+        transform: rotate(180deg);
+
+    }
+
+    75%{
+
+        filter: drop-shadow(15px 50px 70px rgb(0, 21, 255)); 
+        transform: translate(540px,15px);
+
+
+
+    }
+
+    100%{
+
+        filter: drop-shadow(20px 60px 80px rgb(162, 0, 255)); 
+        transform: scale(1.5);
+
+    }
+
+
+}
+
+@keyframes second{
+    
+    0%{
+
+        filter: drop-shadow(0px 20px 40px rgb(255, 0, 123)); 
+        transform: translate(0px,0px);
+
+    }
+
+    25%{
+
+        filter: drop-shadow(5px 30px 50px rgb(255, 0, 0)); 
+        transform: translate(100px,-100px);
+
+
+
+    }
+
+    50%{
+
+        filter: drop-shadow(10px 40px 60px rgb(255, 230, 0)); 
+        transform: translate(150px,-200px);
+
+    }
+
+    75%{
+
+        filter: drop-shadow(15px 50px 70px rgb(0, 21, 255)); 
+        transform: translate(152px,-203px);
+
+
+    }
+
+    100%{
+
+        filter: drop-shadow(20px 60px 80px rgb(162, 0, 255)); 
+        transform: translate(0px,0px);
+        transform: scale(0.1);
+
+
+    }
+
+
+}

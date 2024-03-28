@@ -1,0 +1,91 @@
+body{
+
+    background: linear-gradient(black, rgb(120, 37, 59));
+    background-attachment: fixed;
+
+}
+
+h1{
+
+    text-align: center;
+    color: white;
+
+}
+
+img{
+
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: 35%;
+    filter: drop-shadow(0px 5px 20px rgb(236, 209, 35));
+    animation: second 0.5s infinite alternate;
+
+}
+
+.svg2{
+
+    width: 400px;
+    height: 400px;
+    color: rgb(221, 156, 77)!important;
+    position: relative;
+    left: 35%;
+    filter: drop-shadow(0px 5px 20px rgb(94, 215, 144));
+    animation: third 0.5s infinite alternate;
+
+}
+
+svg{
+
+    width: 400px;
+    height: 400px;
+    color: rgb(221, 156, 77)!important;
+    position: relative;
+    left: 35%;
+    filter: drop-shadow(0px 5px 20px rgb(97, 232, 185));
+    animation: main 0.5s infinite alternate;
+
+}
+
+@keyframes third{
+
+    from{
+        filter: drop-shadow(0px 10px 50px rgb(97, 232, 185)); 
+        transform: translateX(0px);
+    }
+
+    to{
+        filter: drop-shadow(0px 20px 80px rgb(30, 138, 215));
+        transform: translateX(-60px);
+    }
+
+}
+
+@keyframes second{
+
+    from{
+        filter: drop-shadow(0px 10px 50px rgb(236, 209, 35)); 
+        transform: rotate(0deg);
+    }
+
+    to{
+        filter: drop-shadow(0px 20px 80px rgb(30, 138, 215));
+        transform: rotate(60deg);
+    }
+
+}
+
+@keyframes main{
+    
+
+    from{
+        filter: drop-shadow(0px 5px 20px rgb(97, 232, 185)); 
+        transform: translateX(0px);
+    }
+
+    to{
+        filter: drop-shadow(0px 20px 80px rgb(30, 138, 215));
+        transform: translateX(60px);
+    }
+
+}
