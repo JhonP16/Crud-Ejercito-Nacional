@@ -1,0 +1,163 @@
+body{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../img/fondo_mostrar.jpg);
+    background-size: cover !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+    color: white;
+}
+
+.container_table{
+    display: flex;
+}
+
+.table_elements{
+    margin: 50px auto;
+    text-align: center;
+    align-items: center;
+}
+
+.container_table .table_elements table{
+    border: 2px solid #ffffff;
+    width: 90%;
+}
+
+.container_table .table_elements table td{
+
+    font-weight: bold;
+    padding: 20px;
+    height: 50px;
+    background-color:rgba(226, 204, 204, 0.171);
+}
+
+.container_table .table_elements table tr th{
+    border: 1px solid #ffffff;
+    font-weight: bold;
+    padding: 20px;
+    height: 50px;
+    background-color:rgba(140, 174, 180, 0.171);
+    transition: 0.5s;
+}
+
+.container_table .table_elements table tr th:hover{
+    
+    background-color:rgba(51, 216, 245, 0.171);
+}
+
+.btn2 {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: 0px solid transparent;
+    background-color: rgba(209, 12, 45, 0.384);
+    border-radius: 1.25em;
+    transition: all 0.2s linear;
+   }
+   
+   .btn2:hover {
+    box-shadow: 3.4px 2.5px 4.9px rgba(0, 0, 0, 0.025),
+     8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
+     17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
+     36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
+     99px 72px 143px rgba(0, 0, 0, 0.08);
+   }
+   
+   .tooltip {
+    position: relative;
+    display: inline-block;
+   }
+   
+   .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 4em;
+    background-color: rgba(0, 0, 0, 0.253);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 110%;
+   }
+   
+   .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.253) transparent transparent;
+   }
+   
+   .tooltip:hover .tooltiptext {
+    visibility: visible;
+   }
+
+
+   .btn {
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+  
+  .btn .spann {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .btn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  .btn:hover svg {
+    transform: translateX(2.2em) rotate(45deg) scale(1.1);
+  }
+  
+  .btn:hover .spann {
+    transform: translateX(5em);
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+
+  a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  

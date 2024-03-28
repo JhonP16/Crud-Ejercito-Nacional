@@ -1,0 +1,88 @@
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+        body {
+            background-image: url(../img/fondo2.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/fondo2.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        nav{
+
+            color: white;
+            width: 100%;
+            height: 40px;
+            background-color: rgba(85, 235, 205, 0.318);
+            padding-top: 35px;
+            padding-bottom: 35px;
+
+        }
+
+        #titulo1{
+
+            color: aliceblue;
+            padding: 70px;
+            text-align: center;
+
+        }
+
+        .barra{
+
+            width: 100%;
+            height: 150px;
+            background-color: rgba(25, 157, 224, 0.681);
+
+        }
+
+
+        .formulario{
+            
+            color: whitesmoke;
+            background-color: rgba(41, 235, 196, 0.381);
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            border: 2px solid whitesmoke;
+            border-radius: 5px;
+            padding: 35px;
+
+        }
+
+        .box{
+
+            text-align: center;
+            border-radius: 40px;
+            width: 230px;
+            height: 25px;
+
+        }
+
+        .box:hover{
+
+            transition: 1s;
+            scale: 1.2;
+
+        }
+
+        .box2{
+
+            width: 180px;
+            height: 30px;
+            background-color: rgba(255, 249, 254, 0.381);
+
+        }
+
+        .box2:hover{
+
+            cursor: pointer;
+            background-color: bisque;
+            transition: 1s;
+
+        }
+
+        
