@@ -1,0 +1,195 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-size: 20px;
+	font-family: 'Noto Serif', serif;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/fondo_farmacia.jpg);
+    background-size: cover !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+}
+
+nav{
+	background:#2c3e50;
+	height: 60px;
+}
+h1{
+	color: white;
+	padding: 5px 0 0 80px;
+}
+form{
+    background-color: #ece2e244;
+	width: 45%;
+	margin: 100px auto;
+	text-align: left;
+	padding: 20px;
+	border:1px solid #bbbbbb;
+	border-radius: 5px;
+	
+	}
+
+.grupo{
+	margin: 10px 0px 10px 0px;
+}
+
+.grupo label{
+	display: block;
+	text-align: left;
+	margin: 3px;
+	/*font-weight: bold;*/
+}
+.grupo input{
+	width: 93%;
+	height: 30px;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border:1px solid #bbbbbb;
+}
+
+.boton{
+	padding: 10px;
+	font-size: 15px;
+	color: orange;
+	background:#338DFF;
+	border:none;
+	color: white;
+	border-radius: 5px;
+	align-items: center;
+	position: relative;
+	/*margin: -2px 250px;*/
+	left:120px;
+	top: 2px;
+}
+
+.boton-one{
+	padding: 10px;
+	font-size: 15px;
+	color: orange;
+	background:#338DFF;
+	border:none;
+	color: white;
+	border-radius: 5px;
+	align-items: center;
+	position: relative;
+	/*margin: -2px 250px;*/
+	left:600px;
+	bottom:167px;
+	outline: none;
+
+}
+
+button a{
+        text-decoration: none;
+        color: black;
+    }
+table{
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: left;
+}
+tr {
+    border-bottom: 1px solid #cbcbcb;
+}
+th, td{
+    border: none;
+    height: 30px;
+    padding: 2px;
+}
+tr:hover {
+    background: #F5F5F5;
+}
+
+.edit_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    background: #3498db;
+    color: white;
+    border-radius: 3px;
+}
+
+.del_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 3px;
+    background: #ff0000;
+}
+
+.subgrupo{
+   margin-left: 130px;
+}
+
+.btn {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    background-color: var(--color);
+   }
+   
+   .btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: #f5f5f509;
+    color: var(--color);
+   }
+   
+   .btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .btn:hover {
+    color: var(--color2);
+   }
+   
+   .btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
+
+   .btn-conf{
+    margin-left: 20px;
+   }
+
+   .btn2 a{
+    color: black;
+   }

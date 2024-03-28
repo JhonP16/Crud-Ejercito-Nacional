@@ -1,0 +1,467 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../img/fondo_seccion4.jpg) no-repeat center center fixed;
+    background-size: cover !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+    height: 100vh;
+}
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+}
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 2.5rem;
+    font-weight: 700;
+    color: white;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    font-size: 15px;
+    
+}
+
+
+.nav-list li button{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-list button{
+
+    font-style: italic;
+    background-color: #E40b0b;
+    border: transparent;
+    border-radius: 50px;
+    width: 150px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 19px;
+    color: white;
+    cursor: pointer;
+    margin-top: -0.5rem;
+    transition: .3s;
+    
+}
+
+.nav-list button:hover{
+    background-color: black;
+    border: #E40b0b solid;
+    transition: border ease-in-out 250ms;
+}
+
+.nav-list a{
+    cursor: pointer;
+    padding-bottom: 0.2rem;
+    border: #E40b0b 0px;
+}
+
+.nav-list a:hover{
+    border: #E40b0b solid 4px;
+    border-radius: 3px;
+    transition: border ease-in-out 120ms;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    
+}
+
+
+.b2{
+    font-style: italic;
+    background-color: transparent !important;
+    font-weight: 700;
+    font-size: 19px;
+    color: white;
+    cursor: pointer;
+    max-width: 1rem;
+    margin-top: -1rem;
+    padding-right: 3rem;
+    transition: .4s;
+}
+
+.nav-list .b2:hover{
+    border: none;
+    
+}
+
+.logo{
+    max-width: 9rem;
+    padding-left: 2.4rem;
+}
+
+
+.login{
+    font-style: italic;
+    background-color: transparent !important;
+    font-weight: 700;
+    font-size: 19px;
+    color: white;
+    cursor: pointer;
+    max-width: 5rem;
+    margin-top: -1rem;
+    margin-left: -0.9rem;
+}
+
+.b2:hover,
+.login:hover {
+  cursor: pointer;
+  filter: brightness(0.7);
+  fill: #E40b0b;
+}
+
+
+
+.a-mu{
+    display: none;
+}
+
+.c-mu{
+    display: none;
+}
+.contenedor{
+    margin-top: 10rem;
+}
+.Text_princp{
+    text-align: center;
+    padding: 2rem;
+    padding-left: 1rem;
+    color: white;
+    font-weight: 700px;
+    font-size: 35px;
+    line-height: 57.45px;
+    font-style: normal;
+    margin-left: 2rem;
+    position: static;
+}
+
+.text_second{
+    padding: 7rem;
+    text-align: center;
+    font-weight: 700px;
+    font-size: 15px;
+    line-height: 22.98px;
+    font-style: normal;
+    margin-top: -8rem;
+    color: white;
+    position: static;
+}
+
+.line-1{
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+    width: 150px;
+    margin-left:0rem;
+    margin-top: -10.5rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    border: 3px solid #C30E0E;
+    background-color: #C30E0E;
+    position: static;
+    animation-name: line-1-animation;
+    animation-duration: 1.9s;
+}
+
+.sec1-el{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.b3{
+    margin: 0px auto;
+}
+
+.emp-ahr{
+    display: inline;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 3px solid #C30E0E;
+    padding: 1rem;
+    border-radius: 3rem;
+    width: 13rem;
+    font-weight: 700;
+    line-height: 27.58px;
+    font-size: 20px;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    position: static;
+    transition: .50s;
+    margin-top: -8rem;
+    cursor: pointer;
+
+  }
+  .emp-ahr::after {
+    content: "";
+    position: static;
+    width: 95%;
+    height: 40%;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .emp-ahr::before {
+    content: "";
+    transform-origin: center;
+    position: static;
+    width: 95%;
+    height: 40%;
+    transition: 0.5s;
+  }
+  
+  .emp-ahr:hover::before, .emp-ahr:hover::after {
+    transform: scale(0)
+  }
+  
+  .emp-ahr:hover {
+    box-shadow: inset 0px 0px 25px #C30E0E;
+  }
+
+
+  #btn-mas{
+    display: none;
+}
+.bot{
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+}
+.redes a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    background: none;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border: none;
+    border-radius: none;
+    font-size: 24px;
+    transition: all 500ms ease;
+
+}
+
+.redes a:hover{
+    background: none;
+    color: none;
+    box-shadow: 0px 1px 10px rgba(155, 155, 155, 0.637);
+    border-radius: 1.5rem;
+}
+.redes a{
+    margin-bottom: 0rem;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-mas label{
+    cursor: pointer;
+    background: none;
+    font-size: 40px;
+}
+
+.btn-mas label:hover{
+    color: #E40b0b;
+}
+#btn-mas:checked ~ .btn-mas label{
+    transform: rotate(180deg);
+    font-size: 45px;
+}
+
+
+
+::-webkit-scrollbar{
+    width:10px;
+    background-color: #40191c;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background: #A21112;
+    border-radius: 3rem;
+}
+
+
+/* -------------------------------------------------------------------------------------------- */
+/* No escribir debajo!!!!!!(solo media querys y keyframes) */
+/* -------------------------------------------------------------------------------------------- */
+@media screen and (max-width:1000px){
+    .a-mu{
+        display: block;
+        background-color: transparent;
+        color: white;
+        border: none !important;
+        width: 5rem;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    .c-mu{
+        display: block;
+        background-color: transparent;
+        color: #E40b0b;
+        border: none !important;
+        width: 5rem;
+        cursor: pointer;
+        font-size: 2rem;
+        padding-left: 1rem;
+        padding-top: 0rem;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 1;
+        background-color: black;
+        background-size: cover;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+        max-height: 40rem;
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        color: white;
+
+    }
+    
+    .nav-list button{
+        margin: 1rem;
+    }
+
+    .login{
+        padding-left: 4rem;
+        max-width: 10rem;
+    }
+
+    .bot{
+        display: none;
+    }
+
+    .logo{
+        max-width: 8rem;
+    }
+}
+
+
+
+@media screen and (max-width:300px){
+
+    .Text_princp{
+        font-size: 20px;
+        margin-left: 2rem;
+        max-width: 20rem;
+    }
+
+    .text_second{
+        vertical-align: center;
+        width: 20rem;
+        margin-left: -2.2rem;
+        padding-right: -40rem;
+    }
+
+    .emp-ahr{
+        vertical-align: center;
+        margin-left: -1.5rem;
+        padding-right: -40rem;
+    }
+
+}
+
+@media screen and (max-height:400rem){
+    
+    .nav.nav.visible{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: -50rem;
+        max-height: 110rem;
+
+    }
+
+    .c-mu{
+        padding-left: 6rem;
+        padding-bottom: 4rem;
+        transition: 5s ease-in-out;
+    }
+}
+
+
+@media screen and (width:1200px) and (max-width:2000px){
+    
+    .Text_princp{
+    margin-top: 60px;
+    padding: 60px 0;
+    }
+
+    
+    .logo{
+        max-width: 5rem;
+    }
+}
+
+
+
+@media screen and (height:600px){
+    .Text_princp{
+        margin-top: 40px;
+        padding: 20px 0;
+    }
+}
+@media screen and (width:300px){
+    
+    
+    .logo{
+        max-width: 5rem;
+    }
+}
+
+
+
+
+@keyframes line-1-animation{
+    0%   {background-color: #E40b0b; width: 0%;}
+    100% {background-color: #C30E0E; width: 150px;}
+}
