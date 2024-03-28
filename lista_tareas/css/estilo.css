@@ -1,0 +1,149 @@
+body{
+
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #e7e7e7;
+
+}
+
+.principal{
+
+    text-align: center;
+    margin: 25px auto;
+    padding: 28px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+
+}
+
+h2{
+
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+
+#dia{
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: bold;
+
+}
+
+#seccion_tareas{
+    margin: 30px auto;
+    margin-left: 50px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+    
+}
+
+#nueva_tarea{
+
+    border: none;
+    padding-left: 10px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    transition: 0.7s ease;
+
+}
+
+#nueva_tarea:focus{
+
+    outline: none;
+
+}
+
+#nueva_tarea:hover{
+
+    background-color:#e7e7e754 ;
+
+}
+
+#enviar_tarea, #ordenar_tarea{
+
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+#enviar_tarea{
+
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: #e7e7e7;
+    transition: 0.8s ease;
+}
+
+#enviar_tarea:hover{
+
+    background-color: aquamarine;
+
+}
+
+#info{
+
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(251, 188, 15);
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+#info:hover{
+
+    background-color: rgb(216, 163, 16);
+
+}
+
+.eliminar_tarea{
+
+    position: absolute;
+    right: 37%;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 1s ease;
+}
+
+.eliminar_tarea:hover{
+
+    background-color: #ddd8d8;
+
+}
+
+.tarea{
+
+    background-color: rgb(114, 212, 167);
+    padding: 15px;
+    margin-top: 15px;
+    color: whitesmoke;
+    cursor: pointer;
+
+
+}
+
+.tarea_completada{
+
+    background-color: #e7e7e7;
+    color: black;
+    text-decoration: line-through;
+
+}

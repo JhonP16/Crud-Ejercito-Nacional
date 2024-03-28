@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web de registro de productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Productos</a></li>
+                <li><a href="index.html"></a>Sobre nosotros</li>
+                <li><a href="index.html"></a>Contactanos</li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1> Sitio web de registro de productos</h1>
+    <form id="productForm" action="">
+        <label for="productName">Nombre del producto:</label>
+        <input type="text" id="productName" name="productName" placeholder="Nombre del producto" required>
+
+        <label for="productPrice">Referencia del producto:</label>
+        <input type="text" id="productRef" name="productRef" placeholder="Referencia del producto" required>
+
+        <label for="productCant">Cantidad:</label>
+        <input type="number" id="productCant" name="productCant" placeholder="Ingrese la cantidad" required>
+
+        <label for="productPrice">Precio de producto:</label>
+        <input type="number" id="productPrice" name="productPrice" placeholder="Ingrese precio de producto" required>
+
+        <input id="submit" type="submit" value="Add product">
+    </form>
+    <hr>
+
+    <table id="productTable">
+        <thead>
+            <tr>
+                <th>Nombre del producto:</th>
+                <th>Referencia del producto:</th>
+                <th>Cantidad:</th>
+                <th>Precio del producto:</th>
+            </tr>
+        </thead>
+        <tbody id="productTableBody"></tbody>
+    </table>
+    
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2023|| Mi sitio web de registro de Productos. Reservados todos los derechos.</p>
+    </footer>
+</body>
+</html>
