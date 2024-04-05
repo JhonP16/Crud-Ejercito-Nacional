@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Detallito</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">##</span><br/>
+			<span class="comments"># Como estoy estudiando programación,</span><br/>
+			<span class="comments"># Por eso decidí hacerte este regalito a mi manera :3.</span><br/>
+			<span class="comments">##</span><br/>
+			I = (<span class="string">"Jhon"</span>);<br/>
+			You = (<span class="string">"Aleja"</span>);<br/>
+			<span class="comments"># Nos conocimos en febrero </span><br/>
+			I.meet(You)<br/>
+			<span class="comments"># En la Unal :S </span><br/>
+			Esa U toda linda toda hermosa(:D)<br/>
+			<span class="comments"># Estabas en la inducción y me metí a tu grupo</span><br/>
+			Aceptaste(You)<br/>
+			<span class="comments"># Luego, buscando ubicaciones con un papelito nos conocimos todos :></span><br/>
+			happy(:3)<br/>
+			<span class="comments"># Ya somos super buenos amigos (wiii)</span><br/>
+			wiiii(🦆)<br/>
+			<span class="comments"># Gracias por darme tu amistad!! </span><br/>
+			I.tqm(You)<br/>
+			<span class="comments"># Me alegra mucho conocer a una persona tan linda, sensible e inteligente</span><br/>
+			Y toda estudiosa (📚😱)<br/>
+			<span class="comments"># Admiro tu arte, tu personalidad y tu música :3.</span><br/>
+			lalalala(🎨)<br/>
+			<span class="comments"># Aunque a veces seas mi peor hater.</span><br/>
+			Hater(Tu, yo, a veces=<span class="keyword">True</span>)<br/>
+			<span class="comments"># Igual te quiero muchito.</span><br/>
+			You.en_armonía_con(I) <br/>
+			I.en_armonía_con(You) <br/>
+			<span class="comments"># Eres una gran persona y una gran amiguita :D.</span><br/>
+			while <span class="keyword">True</span>:<br/>
+			<span class="placeholder"></span><span class="keyword">if</span> u = exist:<br/>
+			<span class="placeholder"></span><span class="placeholder"></span>I = "will be happy :D"<br/>
+			<span class="placeholder"></span><span class="keyword">else</span>:<br/>
+			<span class="placeholder"></span><span class="placeholder"></span>I = "will not be happy D:"<br/>
+			<span class="comments"># Eres toda linda como un capibara.</span><br/>
+			I.give(You, a capibara=<span class="keyword">True</span>)<br/>
+			<span class="comments"># Te quiero muchitoo 😺.</span><br/>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Nos conocimos hace (creo jajajaj)
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					Te quieroo.<br/>
+					<div class="signature">- Jhon :3</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var offsetX = $("#loveHeart").width() / 2;
+	var offsetY = $("#loveHeart").height() / 2 - 55;
+	var together = new Date();
+
+	together.setFullYear(2024, 1, 4);
+	together.setHours(11);
+	together.setMinutes(0);
+	together.setSeconds(0);
+	together.setMilliseconds(0);
+
+	if (!document.createElement('canvas').getContext) {
+		var msg = document.createElement("div");
+		msg.id = "errorMsg";
+		msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+		document.body.appendChild(msg);
+		$("#code").css("display", "none")
+		document.execCommand("stop");
+	} else {
+		setTimeout(function () {
+			startHeartAnimation();
+		}, 5000);
+
+		timeElapse(together);
+		setInterval(function () {
+			timeElapse(together);
+		}, 500);
+
+		adjustCodePosition();
+		$("#code").typewriter();
+	}
+</script>
+</body>
+</html>
